@@ -52,6 +52,8 @@
 /* text color */
 .t1 {
     color: rgba(17, 17, 17, 1);
+    font-weight: 700;
+    font-weight: 1.5rem;
 }
 
 .t2 {
@@ -178,8 +180,9 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 3.75rem;
-    margin-bottom: 3.75rem;
+    /* margin-top: 3.75rem;
+    margin-bottom: 3.75rem; */
+    margin: 3.75rem 6rem;
 }
 
 .curriculum>h2 {
@@ -229,13 +232,15 @@ h1 {
 .curriculum-item>p {
     margin-bottom: 0rem;
 }
+
 .curriculum-item>button {
     border: none;
     background-color: transparent;
     font-size: 1rem;
     font-weight: 700;
 }
-.btnCir{
+
+.btnCir {
     height: 3.75rem;
     width: 3.75rem;
     padding: 1rem 0 1.1rem 0;
@@ -246,6 +251,123 @@ h1 {
     font-weight: 900;
     color: #FFF;
     background-color: rgba(254, 163, 1, 1);
+}
+
+/* stories section */
+
+.stories {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3.75rem 0;
+    background: linear-gradient(0deg, rgba(254, 163, 1, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%);
+}
+
+.stories h2 {
+    text-align: center;
+    align-items: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+.stories-grid {
+    display: flex;
+
+}
+
+.story1 {}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.story2 {
+    transform: scale(0.5);
+    transform-origin: top center;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.story3 {
+    transform: scale(0.5);
+    transform-origin: top center;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.story4 {
+
+    transform: scale(0.5);
+    transform-origin: top center;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.story5 {
+
+    transform: scale(0.5);
+    transform-origin: top center;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.stories-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 33.75rem;
+    height: 39.375rem;
+}
+
+.stories-item img {
+    position: relative;
+    width: 33.75rem;
+    height: 21rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stories-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+
+}
+
+.stories-item button {
+    position: absolute;
+    top: 19.2rem;
+    left: 2rem;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 3rem;
+    background: #3CD8E8;
+    display: flex;
+    width: 10.8rem;
+    height: 3rem;
+    padding: .9rem 1.1rem 1rem 1.2rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.btnDate {
+    top: 16rem;
+}
+
+/* footer */
+footer {
+    background-color: rgba(1, 172, 253, 1);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width:36rem) {
@@ -310,13 +432,26 @@ h1 {
     }
 
     /* standard curriculam */
-    .curriculum-grid{
+    .curriculum-grid {
         flex-direction: column;
         gap: 1rem;
     }
 
-    .btnCir{
+    .btnCir {
         display: none;
     }
+
+    /* stories section */
+    .stories-grid {
+        display: flex;
+
+    }
+
+    .story1 {
+        display: none;
+    }
+
+    /* footer section */
+
 
 }
